@@ -10,4 +10,8 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
+app.get('/example', function (req, res) {
+    res.render('test');
+});
+
 app.listen(3000);
