@@ -2,11 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Example App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B.A.S.E.</title>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/myscripts.js"></script>
 </head>
 <body>
-  <div>This is my fancy header</div>
+  <div class="navbar">
+    <h2 class="navtitle">Dis A Title</h2>
+    <a href="/home.handlebars">Home</a>
+    <a href="/what-PC.handlebars">What PC?</a>
+    <a href="#rockdrop">Rock Drop Calc</a>
+      <!-- add rock drop href -->
+    <div class="dropdown">
+      <button class=dropbutton>
+        Objects and Weather <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="content">
+        <a href="#building">Building</a>
+        <a href="#Antenna">Antenna</a>
+        <a href="#Span">Span</a>
+        <a href="#Earth">Earth</a>
+      </div>
+    </div>
+  </div>
   {{{body}}}
-  <div>This is my fancy footer</div>
+  <div class="footer">
+    <p>This is my fancy footer</p>
+  </div>
 </body>
 </html>

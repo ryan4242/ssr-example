@@ -3,7 +3,8 @@ var exphbs  = require('express-handlebars');
 
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.use(express.static('public'));
+app.engine('handlebars', exphbs({defaultLayout: 'main', partialsDir: 'views/partials/'}));
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {

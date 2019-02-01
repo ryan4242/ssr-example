@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+}
+.navbar{
+  overflow: hidden;
+  background-color: lightgray;
+  height: 49px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.navbar .navtitle {
+  position: relative;
+  float: right;
+  padding-right: 20px;
+  bottom: 10px;
+}
+.navbar a {
+  color: black;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbutton {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  background-color: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown .dropbutton:hover {
+  background-color: black;
+  color: white;
+}
+.content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: lightgray;
+  box-shadow: -1px 1px 8px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: inherit;
+}
+.dropdown:hover .content {
+  display: block;
+}
+.title {
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
