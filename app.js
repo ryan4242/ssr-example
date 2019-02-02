@@ -11,8 +11,12 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/example', function (req, res) {
+app.get('/what-PC', function (req, res) {
     res.render('test');
+});
+
+app.get('/rock-drop-calc', function (req, res) {
+    res.render('home');
 });
 
 app.listen(3000);
