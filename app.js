@@ -12,11 +12,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/what-PC', function (req, res) {
-    res.render('test');
+    res.render('what-PC');
 });
 
 app.get('/rock-drop-calc', function (req, res) {
-    res.render('home');
+    res.render('rock-drop-calc');
 });
 
 app.listen(3000);

@@ -1,11 +1,12 @@
-<p>hello world</p>
-<input id="timefall" type=text value="time"><button onclick="myFunction()">submit</button>
+<p>Enter your rocks fall time in seconds below.</p>
+<input type="number" id="height" value="">
+<button onclick="heightFunction()">Submit</button>
+
+<p id="demo"></p>
 
 <script>
-  var t = document.getElementById(timefall)
-  var g = 9.8
-
-  function myFunction() {
-    return 0.5 * g * (t)
-  }
+function heightFunction() {
+  var h = document.getElementById("height").value;
+  document.getElementById("demo").innerHTML = 0.5 * 9.8 * Math.pow(h, 2) + " meters";
+}
 </script>
